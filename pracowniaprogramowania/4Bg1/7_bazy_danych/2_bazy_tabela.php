@@ -9,11 +9,11 @@
     <h4>Użytkownicy</h4>
 <?php
   $connect = new mysqli("localhost","root","","zsk_4bg1_baza1");
-  $sql ="SELECT `users`.*, `city`.`city`\n"
+  $sql ="SELECT `users`.*, `cities`.`city`\n"
 
     . "FROM `users`\n"
 
-    . "	, `city`";
+    . "	, `cities`";
 
   $result = $connect->query($sql);
   // echo $row['name'];
@@ -39,7 +39,6 @@ TABLE;
     <td>$row[city]</td>
     </tr>
   ROW;
-
   }
 echo"</table>";
   $connect->close();
