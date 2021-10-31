@@ -26,6 +26,7 @@ echo <<<TABLE
     <th>Imię</th>
     <th>Nazwisko</th>
     <th>Data urodzenia</th>
+    <th>Miasto</th>
   </tr>
 
 TABLE;
@@ -36,6 +37,7 @@ TABLE;
     <td>$row[id]</td>
     <td>$row[name]</td>
     <td>$row[surname]</td>
+    <td>$row[birthday]</td>
     <td>$row[city]</td>
     </tr>
   ROW;
